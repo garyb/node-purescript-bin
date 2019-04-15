@@ -1,6 +1,6 @@
 {
 	"name": "purescript",
-	"version": "0.12.4",
+	"version": "0.12.5",
 	"description": "PureScript wrapper that makes it available as a local dependency",
 	"license": "ISC",
 	"repository": "purescript-contrib/node-purescript",
