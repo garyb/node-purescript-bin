@@ -13,7 +13,7 @@
 		"purs": "purs.bin"
 	},
 	"scripts": {
-		"postinstall": "install-purescript --purs-ver=0.12.5",
+		"postinstall": "install-purescript --purs-ver=0.13.0",
 		"pretest": "eslint .",
 		"test": "node test.js",
 		"prepublishOnly": "node prepublish.js"
