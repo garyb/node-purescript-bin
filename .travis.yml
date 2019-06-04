@@ -5,9 +5,9 @@ jobs:
   - dist: xenial
     node_js: node
   - os: osx
-    node_js: 8
+    node_js: 10
     osx_image: xcode10.2
     script: node test.js
   - os: windows
-    node_js: 10
+    node_js: node
     script: node test.js

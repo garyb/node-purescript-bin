@@ -58,6 +58,6 @@ purs --help
 
 ## License
 
-[ISC License](./LICENSE) © 2017 - 2019 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2017 - 2019 Watanabe Shinnosuke
 
-The [artwork](./media/artwork.svg) is a derivative of [PureScript logo](https://github.com/purescript/logo/blob/master/PS_Logo_Final.svg) by [Gareth Hughes](https://github.com/goodworkson) used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and it is also licensed under CC BY 4.0 by Shinnosuke Watanabe.
+The [artwork](./media/artwork.svg) is a derivative of [PureScript logo](https://github.com/purescript/logo/blob/master/PS_Logo_Final.svg) by [Gareth Hughes](https://github.com/goodworkson) used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and it is also licensed under CC BY 4.0 by Watanabe Shinnosuke.
