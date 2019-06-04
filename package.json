@@ -1,6 +1,6 @@
 {
 	"name": "purescript",
-	"version": "0.12.5",
+	"version": "0.13.0",
 	"description": "PureScript wrapper that makes it available as a local dependency",
 	"author": "Watanabe Shinnosuke (http://github.com/shinnn)",
 	"repository": "purescript-contrib/node-purescript",
