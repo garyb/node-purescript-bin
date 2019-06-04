@@ -7,6 +7,24 @@
 
 [PureScript](https://github.com/purescript/purescript) binary wrapper that makes it seamlessly available via [npm](https://www.npmjs.com/)
 
+## Prerequisites
+
+This package makes maximum use of `postinstall` [script](https://docs.npmjs.com/misc/scripts), so please make sure that [`ignore-scripts` npm-config](https://docs.npmjs.com/misc/config#ignore-scripts) is not enabled before installation.
+
+```console
+$ npm config get ignore-scripts
+false
+```
+
+### Caching npm packages on CI
+
+Since the newly installed PureScript binary is cached to the [npm cache directory](https://docs.npmjs.com/files/folders#cache), on a [continuous](https://circleci.com) [integration](https://www.appveyor.com) [service](https://www.bitrise.io) it's highly recommended to include the directory to CI cache. Then the second and subsequent installations would be much faster than the first.
+
+```yaml
+# The recommended cache setting in Travis CI's .travis.yml file, for example
+cache: npm
+```
+
 ## Installation
 
 [Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
@@ -15,11 +33,9 @@
 npm install purescript
 ```
 
-Note that this package makes maximum use of `postinstall` [script](https://docs.npmjs.com/misc/scripts), so please make sure that [`ignore-scripts` npm-config](https://docs.npmjs.com/misc/config#ignore-scripts) is not enabled before installation.
-
 Once the command above is executed,
 
-__1.__ First, it checks if a PureScript binary has been already cached in your machine, and restores that if available.
+__1.__ First, it checks if a PureScript binary has been already cached, and restores that if available.
 
 __2.__ The second plan: if no cache is available, it downloads a prebuilt binary from [the PureScript release page](https://github.com/purescript/purescript/releases).
 
