@@ -4,10 +4,16 @@ jobs:
   include:
   - dist: xenial
     node_js: node
+    cache:
+      directories: ~/.npm
   - os: osx
-    node_js: 10
     osx_image: xcode10.2
+    node_js: 10
+    cache:
+      directories: ~/.npm
     script: node test.js
   - os: windows
     node_js: node
     script: node test.js
+    cache:
+      directories: /c/Users/travis/AppData/Roaming/npm-cache
